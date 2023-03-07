@@ -1,0 +1,21 @@
+.wrap-control-input {
+  display: flex;
+  flex-direction: column;
+  .title-input {
+    color: #1e2633;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .control-input {
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    outline: none;
+    padding-left: 12px;
+  }
+  .control-input:focus {
+    border-color: #3d75de !important;
+  }
+  .control-input:hover {
+    border-color: #3d75de !important;
+  }
+}

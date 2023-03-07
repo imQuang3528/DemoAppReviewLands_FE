@@ -1,0 +1,80 @@
+@import "@/assets/scss/BaseColor.scss";
+.custom-select {
+  position: relative;
+  width: 100%;
+  text-align: left;
+  outline: none;
+}
+
+.custom-select .selected {
+  border-radius: 6px;
+  border: 1px solid $color-border;
+  padding-left: 1em;
+  cursor: pointer;
+  padding-top: 6px;
+  user-select: none;
+  position: relative;
+}
+
+.custom-select .selected.open {
+  border: 1px solid $color-border;
+  border-radius: 6px 6px 0px 0px;
+}
+
+.custom-select .selected:after {
+  position: absolute;
+  content: "";
+  top: 22px;
+  right: 1em;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+.custom-select .items {
+  transform: translate(0px,-214px);
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid $color-border;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: $white;
+  z-index: 999;
+  .child-item {
+    height: 36px;
+    padding-top: 8px;
+    border-bottom: 1px solid $color-border;
+  }
+}
+
+.custom-select .items div {
+  padding-left: 1em;
+  cursor: pointer;
+  user-select: none;
+}
+
+.custom-select .items div:hover {
+  background-color: $color-border;
+}
+
+.selectHide {
+  display: none;
+}
+.arrow {
+  position: absolute;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: solid black;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.59, 1.39, 0.37, 1.01);
+}
+.expanded {
+  transform: rotateZ(225deg) translateY(2px);
+}

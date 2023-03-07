@@ -1,0 +1,64 @@
+@import "@/assets/scss/BaseColor.scss";
+
+body {
+  font-family: "Open Sans", sans-serif !important;
+  font-family: "Roboto", sans-serif !important;
+  font-size: 14px !important;
+}
+.cursor {
+  cursor: pointer;
+}
+
+.dx-overlay-wrapper .dx-overlay-content .dx-popup-content {
+  padding: unset;
+}
+
+.title {
+  color: $color-text;
+  font-weight: 500;
+  font-family: "Roboto";
+}
+
+.btn {
+  height: 37px;
+  width: auto;
+  border: 1px solid $color-border;
+  line-height: 36px;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 0 10px;
+}
+
+.btn-default {
+  background: $color-background;
+}
+
+.btn-primary {
+  height: 37px;
+  width: auto;
+  margin-left: 10px;
+  border: 1px solid $color-border;
+  line-height: 36px;
+  background: #2680eb;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.btn-danger {
+  background-color: $color-required;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.wrap-popup-footer {
+  height: 60px;
+  background-color: $color-background;
+  .content-popup-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 12px 24px;
+    border: 1px solid $color-border;
+  }
+}

@@ -1,0 +1,134 @@
+.sidebar-container {
+  position: fixed;
+  height: 100%;
+  width: 260px;
+  background: #11101d;
+  top: 0;
+  left: 0;
+  .wrap-logo {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    .bx-landscape {
+      color: #fff;
+      min-width: 50px;
+      height: 50px;
+      line-height: 50px;
+      font-size: 30px;
+    }
+    .logo-name {
+      color: #fff;
+      font-size: 22px;
+    }
+  }
+}
+
+.nav-links {
+  height: calc(100vh - 160px);
+  padding-left: 0;
+}
+
+ul.nav-links li {
+  list-style: none;
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+ul.nav-links li:hover {
+  background: #1d1b31;
+  cursor: pointer;
+}
+
+ul.nav-links li i {
+  height: 50px;
+  min-width: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li div {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.menu-icon {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.menu-icon .bx-chevron-down {
+  margin-left: 50px;
+  padding-left: -4px;
+  transition: all 0.3s ease;
+}
+.arrowup {
+  transform: rotate(-180deg);
+}
+.sub-menu {
+  padding: 10px 6px 6px 45px;
+  margin-top: -20px;
+  transition: all 1s ease;
+  display: none;
+}
+.show {
+  display: block;
+  transition: all 1s ease;
+}
+.sub-menu li {
+  padding: 5px;
+  white-space: nowrap;
+  opacity: 0.6;
+  transition: all 0.4s ease;
+  color: #fff;
+  text-align: left;
+}
+
+.sub-menu li:hover {
+  background: #1d1b31;
+  opacity: 1;
+}
+
+.collap-in {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  color: #fff;
+  padding: 0 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 0 8px;
+  cursor: pointer;
+  width: 220px;
+  border-radius: 4px;
+}
+
+.collap-out {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border-radius: 4px;
+  margin-left: 8px;
+}
+.box-collap-out {
+  padding: 12px;
+}
+.content-collap {
+  margin-left: 12px;
+}
+
+.shrinkmode {
+  width: 60px;
+}
