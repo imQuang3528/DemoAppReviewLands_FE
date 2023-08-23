@@ -6,7 +6,7 @@
       </div>
       <div class="btn-new btn-primary cursor" @click="handleShowPopup()">
         <i class="bx bx-plus"></i>
-        <span class="title-button">Thêm mới</span>
+        <span class="title-button">Thêm mới tesst</span>
       </div>
     </div>
     <div class="wrap-grid-category-review">
